@@ -3,7 +3,7 @@ console.log("Hey! This works! Have a great day! OK?");
 }
 
 
-var clickToCountEs = function countE() {
+var clickToCountEs = function () {
   var phrase = prompt ("Which phrase would you like to examine?");
   if (typeof(phrase) != "string") {
     alert("That's not a valid entry, Buddy! Give it another try!");
@@ -19,4 +19,3 @@ var clickToCountEs = function countE() {
     return true;
 
 }
-countE();
