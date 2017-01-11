@@ -1,11 +1,22 @@
-var name = prompt("Who you?");
+var clicked = function () {
+console.log("Hey! This works! Have a great day! OK?");
+}
 
-var sup = prompt("Hi " + name + "! Sup?");
 
-next = prompt(sup + "? That's sweet! What else " +name+ "?");
+var clickToCountEs = function countE() {
+  var phrase = prompt ("Which phrase would you like to examine?");
+  if (typeof(phrase) != "string") {
+    alert("That's not a valid entry, Buddy! Give it another try!");
+    return false;
+  } else {
+    var eCount = 0;
+    for (index=0; index<phrase.length; index++) {
+      if (phrase.charAt(index) == 'e' || phrase.charAt(index) == 'E')
+      eCount++;
+    }
+  }
+    alert("There are " + eCount + " E's in \"" + phrase + "\".");
+    return true;
 
-var next = prompt(next + "? That's so goofy!");
-
-alert("Later Guv'na!");
-
-console.log("Hey! This works!");
+}
+countE();
